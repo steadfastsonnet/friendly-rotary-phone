@@ -1,23 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-  <body>
-<!-- if you change this div's id, you must also change it in the <script></script> tags -->
-<div id="img-load"></div>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<script type="text/javascript">
+      var pageArr = ["https://i.pinimg.com/originals/88/da/38/88da38c61a0895ae2fd54c1eb9d5bfc9.jpg", "https://i.pinimg.com/originals/7d/04/0e/7d040e94931427709008aaeda14db9c8.gif", "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6e13bb66109353.5b0b7773dbca9.jpg", "https://source.unsplash.com/random/1500x800/?flowers, nature, cottagecore"];
+		document.location.href = pageArr[Math.ceil(Math.random()*4)];
+	</script>
+</head>
 
-<script>
-  // define your images here
-var images = [
- "https://i.pinimg.com/originals/88/da/38/88da38c61a0895ae2fd54c1eb9d5bfc9.jpg",
-  "https://i.pinimg.com/originals/7d/04/0e/7d040e94931427709008aaeda14db9c8.gif",
-  "https://cinni.neocities.org/images/creatures/cats/cute_cat2.gif"
-];
+<body>
 
-// this chooses a random number from all available image indices
-var randomImage = images[Math.floor(Math.random() * images.length)];
-console.log(randomImage);
-// make the URL into a proper image tag
-var image = "<img src='" + randomImage + "'>";
-// append to the div
-document.getElementById("img-load").innerHTML = image;
-</script>
-  </body>
+</body>
 </html>
